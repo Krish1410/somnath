@@ -1,0 +1,26 @@
+body{
+    background-color: rgb(255, 248, 242);
+}
+#first{
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.8) 30%, rgba(255, 255, 255, 0.2)),url(../assets/images/players.jpg);
+    background-size: cover;
+    height: 96vh;
+    box-shadow: 0px 0px 10px black inset;
+
+}
+#first div p{
+    color: #3084D9;
+    font-size: 50px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+#first div img{
+    width: 200px;
+ }
+ #first div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 20px;
+}
