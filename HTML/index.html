@@ -6,12 +6,13 @@
     <title>Somnath Book</title>
     <link rel="stylesheet" href="../CSS/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <section id="first">
         <div>
             
-            <img src="../assets/images/logo.png" alt="">
+            <img data-aos="zoom-in" src="../assets/images/logo.png" alt="">
             <div class="text">
                 <p>Best Safe Book Ever </p>
                 <div class="buttons">
@@ -23,36 +24,30 @@
 
         </div>
     </section>
-    <!-- <section id="step">
-        <div class="one">
-            <img src="../assets/images/one.webp" alt="">
-            <p>Create Account</p>
-        </div>
-        <div class="two">
-            <img src="../assets/images/two.webp" alt="">
-            <p>Create Account</p>
-        </div>
-        <div class="three">
-            <img src="../assets/images/three.webp" alt="">
-            <p>Create Account</p>
-        </div>
-    </section> -->
     <section id="second">
         <center>
             <p>PLAY NOW</p>
         </center>
         <div id="images">
-            <img src="../assets/images/cards.png" alt="">
-            <img src="../assets/images/casino.png" alt="">
-            <img src="../assets/images/football.png" alt="">
-            <img src="../assets/images/stump.png" alt="">
-            <img src="../assets/images/tanis.png" alt="">
+            <div data-aos="flip-right" class="one">
+                <img src="../assets/images/one.webp" alt="">
+                <p>Create Account</p>
+            </div>
+            <div data-aos="flip-right" class="two">
+                <img src="../assets/images/two.webp" alt="">
+                <p>Create Account</p>
+            </div>
+            <div data-aos="flip-right" class="three">
+                <img src="../assets/images/three.webp" alt="">
+                <p>Create Account</p>
+            </div>
+
         </div>
         <div class="contain">
-            <div id="f">
+            <div data-aos="zoom-in" id="f">
                 <img src="../assets/images/player.png" alt="">
             </div>
-            <div id="s">
+            <div data-aos="zoom-in" id="s">
                     <p>With our step by step by step guide For Beginners,Get  Started Playing.<br>Start Learning  Now.. 24/7 ACTIVE.<br><br>We Deal Only On WhatsApp</p>
                     <button><img src="../assets/images/WhatsApp_.png" alt="">WhatsApp</button>
 
@@ -64,10 +59,10 @@
             <p>Get You ID</p>
         </center>
         <div id="join_sec">
-            <div id="join_f">
+            <div data-aos="fade-right" id="join_f">
                 <img src="../assets/images/banner.jpg" alt="">
             </div>
-            <div id="join_s">
+            <div data-aos="fade-left" id="join_s">
                 <h1>Get Your ID in Just 2 Mins.</h1>
                 <p>Get Your own ID From India's no.1 Booking platform</p>
                 <p>Click WhatsApp button to join Us</p>
@@ -76,12 +71,11 @@
             </div>
         </div>
     </section>
-    <section id="content">
+    <section  data-aos="fade-up" id="content">
         <center>
             <p>Contect Us</p>
         </center>
         <a href="https://t.me/somnathonlinebook" target="_blank">
-
         <img src="../assets/images/contect_us.jpg" alt="">
         </a>
     </section>
@@ -89,9 +83,8 @@
         <center>
             <p>Why choose us?</p> 
         </center>
-        <div class="devide">
-            <div id="fr">
-
+        <div data-aos="flip-down"  class="devide">
+            <div   id="fr">
                 <ul>
                     <li>✔Most Trusted Platform</li>
                     <li>✔Fastest Reply Within 59 Seconds</li>
@@ -100,7 +93,7 @@
                     <li>✔100% Transfer 7 Accuracy</li>
                 </ul>
             </div>
-            <div id="sr">
+            <div  id="sr">
                     <img src="../assets/images/wcu.png" alt="" >
             </div>
 
@@ -136,4 +129,8 @@
         </div>
     </footer>
 </body>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </html>
