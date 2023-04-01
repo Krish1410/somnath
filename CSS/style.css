@@ -15,6 +15,8 @@ body{
     background-size: cover;
     height: 100vh;
     box-shadow: 0px 0px 10px black inset;
+    display:flex;
+    justify-content: center; 
 }
 #first div .text p{
     color:var(--main-color);
@@ -26,6 +28,10 @@ body{
 .text{
     display: flex;
     flex-direction: column;
+}
+a{
+
+    text-decoration: none !important;
 }
 .text .buttons button{
     background: #26D367;
@@ -86,7 +92,7 @@ body{
 }
 #second 
 {
-    height: 100vh;
+    /* height: 100vh; */
 }
 #second center p{
     font-weight: bold;
@@ -148,6 +154,8 @@ body{
     text-align: left;
     margin-left: 100px;
     color: var(--main-color);
+    color: white;
+    font-size: 20px;
     
 }
 #s button{
@@ -161,10 +169,163 @@ body{
     font-size: 20px;
     border-radius: 10px;
     border: none;
+    margin-bottom: 20px;
 }
 #s button img {
     width: 30px !important;
     margin-right: 10px;
+}
+
+
+#step{
+    background: black;
+}
+#choose{
+
+}
+#choose center p{
+    font-weight: bold;
+    color: rgb(0, 0, 0) !important; 
+    font-size: 20px;
+    /* box-shadow: 0px 0px 10px var(--main-color) inset; */
+    margin: 0;
+    padding: 20px 0px !important;
+}
+#choose .devide{
+    display: flex;
+    flex-wrap: wrap;
+    /* width: 100%; */
+
+    
+}
+#choose .devide #fr{
+
+    width: 50%;
+}
+#fr{
+
+    background-color: black;
+    display: flex;
+    align-items: center;
+}
+#choose .devide #fr ul li{
+    list-style: none;
+    font-size: 1.4rem;
+    color: var(--main-color);
+    color: white;
+    padding: 10px 30px
+}
+
+#sr{
+    background-color: var(--main-color);
+    width: 50%;
+    text-align: center;
+
+}
+#sr img{
+    width: 50%;
+}
+#content{
+    width: 100%;
+}
+#content img{
+    width: 100%;
+}
+#content center p{
+    font-weight: bold;
+    color: rgb(0, 0, 0) !important; 
+    font-size: 20px;
+    /* box-shadow: 0px 0px 10px var(--main-color) inset; */
+    margin: 0;
+    padding: 20px 0px !important;
+}
+footer{
+    background-color: rgb(54, 54, 54);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+#sec{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+#o1,#o2,#o3{
+    text-align: left;
+}
+footer h1{
+    color: var(--main-color);
+    font-size: 40px !important;
+    width: fit-content;
+}
+footer p{
+    color: white;
+    width: fit-content;
+}
+
+
+#join center p{
+    font-weight: bold;
+    color: rgb(0, 0, 0) !important; 
+    font-size: 20px;
+    /* box-shadow: 0px 0px 10px var(--main-color) inset; */
+    margin: 0;
+    padding: 20px 0px !important;
+
+
+}
+#join_sec{
+    display: flex;
+    flex-wrap: wrap;
+}
+#join_f{
+    text-align: center;
+    width: 50%;
+    background-color: black;
+}
+#join_s{
+    background-color: var(--main-color);
+    width: 50%;
+    text-align: center;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#join_s h1{
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+#join_s p{
+    font-size: 20px;
+}
+#join_s  button{
+    background: #26D367;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: none;
+    margin-right: 10px !important   ;
+    margin-bottom: 10px;
+}
+#join_s button img {
+
+    width: 30px !important;
+    margin: 0 !important;
+    margin-right: 10px !important;
+}
+#join_s button:hover{
+    background: #1ea150;
+    cursor: pointer;
 }
 @media only screen and (max-width: 1090px) {
 
@@ -178,7 +339,7 @@ body{
         #s{
             width: 100%;
             line-height: 30px;
-            font-size: 20px;
+            font-size: 15px;
         }
 }
 @media only screen and (max-width:740px) {
@@ -186,7 +347,54 @@ body{
     {
         width: 400px !important;
     }
-        .text .buttons button{
-            width: 100%;
-        }
+    
+    .text .buttons button{
+        width: 100%;
+    }
+
+    #s button{
+        margin-left: 20px;
+        
+    }
+
+    #s p{
+        margin-left: 20px;
+
+    }
+
+    #choose .devide{
+        flex-direction: column-reverse;
+    }
+
+    #fr{
+        width: 100% !important;
+    }
+
+    #sr{
+        width: 100%;
+    }
+    #o1,#o2,#o3{
+        /* text-align: left; */
+        width: 100%;
+    }
+    #join_sec{
+        flex-direction: column;
+    }
+    #join_f,#join_s{
+        width: 100%;
+    }
+.buttons
+{
+    margin-left: 0 !important;
+}
+footer h1{
+    font-size: 24px !important;
+}
+#choose .devide #fr ul li{
+    list-style: none;
+    font-size: 1.2rem;
+    color: var(--main-color);
+    color: white;
+    padding: 10px 30px
+}
 }
