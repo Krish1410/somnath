@@ -53,10 +53,14 @@
         overflow: auto;
     }
     .Mainbody {
-        background: linear-gradient(to left, rgba(0, 0, 0, 0.7) 100%, rgba(255, 255, 255, 0.2)), url(./assets/images/player.jpg);
+        background: linear-gradient(to left, rgba(0, 0, 0, 0.5) 100%, rgba(255, 255, 255, 0.2)), url(./assets/images/player.jpg);
         background-size: cover;    
+        height: 100vh !important;
         background-repeat: no-repeat;
         background-attachment: fixed;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
 </style>
@@ -301,6 +305,7 @@
 <script>
     function openwindow(){
         document.getElementById("term").style.display = "block";
+        document.getElementById("inside_term").scrollTo(top);
         document.getElementById("main").style.display = "none";
         document.getElementById("body").classList.add("Mainbody");
     }
